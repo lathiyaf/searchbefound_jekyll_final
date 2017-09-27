@@ -1,0 +1,14 @@
+- title: Social link
+  links:
+    - name: facebook
+      link: https://www.facebook.com/RichardLRobertsonandAssociatesPA
+      icon: fa fa-facebook
+    - name: twitter
+      link: https://twitter.com/RRobertsonLaw
+      icon: fa fa-twitter
+    - name: google
+      link: https://plus.google.com/103531682216721695301
+      icon: fa fa-google-plus
+    - name: rss
+      link: http://www.rlrobertson.com/feed/
+      icon: fa fa-rss

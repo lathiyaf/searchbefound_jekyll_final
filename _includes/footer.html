@@ -1,0 +1,43 @@
+<div class="container">
+	<div class="footer-columns">
+		{% for column in site.data.footer %}
+			<ul class="footer-links">
+				<li>
+					<h4>{{ column.title }}</h4>
+				</li>
+				<ul class="inside-menu">
+				{% for link in column.links %}
+					<li>
+						<a href="{{ link.link }}">{{ link.name }}</a>
+					</li>
+				{% endfor %}
+				</ul>
+			</ul>
+		{% endfor %}
+		{% for column in site.data.footer_contact %}
+			<ul class="footer-links">
+				<li>
+					<h4>{{ column.title }}</h4>
+				</li>
+				
+				{% for link in column.links %}
+					<li>
+						<a target="_blank" href="{{ link.link }}">{{ link.name }}</a>
+					</li>
+				{% endfor %}
+				
+			</ul>
+		{% endfor %}
+	</div>
+	<div class="social_media_div legal-line">
+		Copyright © 2017 Robertson & Associates, all rights reserved. Powered by 
+			<a href="https://searchandbefound.com/" class="powerd_by" target="_blank">SEARCH & BEFOUND</a>
+			{% for column in site.data.footer_social %}
+				{% for link in column.links %}
+					<a class="social_media" target="_blank" href="{{ link.link }}"><i class="{{ link.icon }}"></i></a>
+				{% endfor %}
+			{% endfor %}
+	</div>
+</div>
+
+
